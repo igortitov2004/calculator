@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/t"
+            style="@style/TOOLBAR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="MissingConstraints">
+            <TextView
+                style="@style/TEXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TEXT_TOOLBAR"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/history"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/baseline_history_24"
+                android:onClick="onClick" />
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+
+            android:id="@+id/frameInput"
+
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t"
+            tools:ignore="MissingConstraints">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:gravity="right|center"
+                android:id="@+id/inputField">
+
+            </EditText>
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameInput"
+            tools:ignore="MissingConstraints"
+            android:id="@+id/frameAns">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:gravity="right|center"
+                android:text="="
+                android:id="@+id/resultField">
+
+            </EditText>
+
+        </FrameLayout>
+        <FrameLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="370dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameAns"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:onClick="clickNumber"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginStart="5dp"
+                style="@style/BUTTON"
+                android:text="1"
+                android:id="@+id/one"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+
+                android:layout_marginStart="100dp"
+                android:textSize="40sp"
+                android:text="2"
+                android:id="@+id/two"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginStart="195dp"
+                android:text="3"
+                android:id="@+id/three"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginStart="5dp"
+                android:text="4"
+                android:layout_marginVertical="65dp"
+                android:id="@+id/four"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="65dp"
+                android:layout_marginStart="100dp"
+                android:text="5"
+                android:id="@+id/five"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="65dp"
+                android:layout_marginStart="195dp"
+                android:text="6"
+                android:id="@+id/six"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="130dp"
+                android:layout_marginStart="5dp"
+                android:text="7"
+                android:id="@+id/seven"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="130dp"
+                android:layout_marginStart="100dp"
+                android:text="8"
+                android:id="@+id/eight"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="130dp"
+                android:layout_marginStart="195dp"
+                android:text="9"
+                android:id="@+id/nine"
+                />
+            <Button
+                android:onClick="clickNumber"
+                style="@style/BUTTON"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="195dp"
+                android:layout_marginStart="100dp"
+                android:text="0"
+                android:id="@+id/zero"
+                />
+
+            <Button
+                android:onClick="clickNumber"
+                android:backgroundTint="@color/teal_500"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginStart="290dp"
+                android:text="÷"
+                android:id="@+id/division"
+                />
+            <Button
+                android:onClick="clickNumber"
+                android:backgroundTint="@color/teal_500"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="65dp"
+                android:layout_marginStart="290dp"
+                android:text="×"
+                android:id="@+id/multiplication"
+                />
+            <Button
+                android:onClick="clickNumber"
+                android:backgroundTint="@color/teal_500"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="130dp"
+                android:layout_marginStart="290dp"
+                android:text="-"
+                android:id="@+id/subtract"
+                />
+
+            <Button
+                android:onClick="clickNumber"
+                android:backgroundTint="@color/teal_500"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="195dp"
+                android:layout_marginStart="290dp"
+                android:text="+"
+                android:id="@+id/add"
+                />
+
+            <Button
+                android:onClick="clickNumber"
+                android:backgroundTint="@color/teal_500"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="195dp"
+                android:layout_marginStart="195dp"
+                android:text="%"
+                android:id="@+id/percent"
+                />
+
+            <Button
+                android:onClick="clickNumber"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:backgroundTint="@color/teal_500"
+                android:layout_marginVertical="195dp"
+                android:layout_marginStart="5dp"
+                android:text="."
+                android:id="@+id/point"
+                />
+
+            <Button
+                android:onClick="clickNumber"
+                android:backgroundTint="@color/teal_500"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="260dp"
+                android:layout_marginStart="5dp"
+                android:text="АС"
+                android:id="@+id/clearAll"
+                />
+            <Button
+                android:onClick="clickNumber"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginVertical="270dp"
+                android:layout_marginStart="110dp"
+                android:background="@drawable/baseline_backspace_24"
+                android:id="@+id/clearOne"
+                />
+
+            <Button
+                android:onClick="clickNumber"
+                android:layout_width="195dp"
+                android:layout_height="70dp"
+                android:textSize="40sp"
+                android:layout_marginVertical="260dp"
+                android:layout_marginStart="195dp"
+                android:text="="
+                android:backgroundTint="@color/teal_700"
+                android:id="@+id/result"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
